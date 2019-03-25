@@ -3,7 +3,7 @@ function getYearOfBirth(age) {
 }
 
 function createGreeting(name, age) {
-    const yob = getYearOfBirth();
+    const yob = getYearOfBirth(25);
     return `"Hi my name is ${name} and i'm ${age} years old. I was born in ${yob}"`;
 }
 
