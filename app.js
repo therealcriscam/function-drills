@@ -78,7 +78,7 @@ console.log(testWord)
 
 function daysInAMonth(month, leapYear) {
     
-    if (!month === "January" || "February" || "March" || "April" || "May" || "June" || "July" || "August" || "September" || "October" || "November" || "December") {
+    if (month !== "January" || "February" || "March" || "April" || "May" || "June" || "July" || "August" || "September" || "October" || "November" || "December") {
         throw new Error("Must provide a valid month.");    
     }
     
@@ -108,10 +108,8 @@ function daysInAMonth(month, leapYear) {
         result = `${month} has 28 days` 
         break;
 
-        // default: 
-        // throw new Error("Must provide a valid month.")
     }
 }   
 
-const testMonth = daysInAMonth("February", true);
+const testMonth = daysInAMonth("March");
 console.log(testMonth);
